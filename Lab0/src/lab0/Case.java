@@ -1,10 +1,11 @@
 package lab0;
+
+
 public class Case {
-    public static void casetask(int x){
+    public static Direction caseTask(int x){
         switch (x){
             case 0:
-                System.out.println("Північ");
-                break;
+                return Direction.NORTH;
             case 1:
                 System.out.println("Захід");
                 break;
@@ -15,5 +16,6 @@ public class Case {
                 System.out.println("Схід");
                 break;
         }
+        throw new IllegalArgumentException();
     }
 }
